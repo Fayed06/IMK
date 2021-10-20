@@ -81,8 +81,16 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-body h1 {
+body h1 p {
     color: rgb(255, 255, 255);
+}
+
+footer {
+    width: 100%;
+    background-color: #3F0071;
+    color: white;
+    text-align: center;
+    list-style: none;
 }
 
 .column {
@@ -112,23 +120,6 @@ body h1 {
 }
 
 
-/* Style the counter cards */
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #3F0071;
-    color: white;
-}
-
-.card:hover {
-    transform: scale(1.10);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-
 /* Responsive columns - one column layout (vertical) on small screens */
 
 @media screen and (max-width: 600px) {
@@ -139,79 +130,31 @@ body h1 {
     }
 }
 
-#more {
-    display: none;
-}
-
-h1 {
-    margin-left: 6%;
-}
-
-.carousel-inner {
-    margin-top: 3%;
-    margin-left: 13%;
-}
-
-.carousel-inner:hover {
-    transform: scale(1.05);
-}
-
-
-/* .baris::after {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-.sc {
-    content: "";
-    clear: both;
-    display: table;
-} */
-
-
-/* footer {
-    background-color: #3F0071;
-    color: white;
-} */
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.smolimg {
-    padding-right: 100px;
-}
-
-p {
-    margin-bottom: 0;
-}
-
-footer {
-    width: 100%;
-    background-color: #3F0071;
-    color: white;
+.containers {
     text-align: center;
-    list-style: none;
+    color: white;
+    padding: 50px;
+    margin: 20px;
 }
 
 .text-center {
-    width: 20px;
+    padding: 45px;
+    background-color: #3F0071;
 }
 
-.container-fluid {
+.content {
+    text-align: justify;
+    color: white;
+    padding: 45px;
+    background-color: #404040;
+}
+
+p {
+    color: white;
+}
+
+.skor {
+    padding: 10px;
     background-color: #3F0071;
+    color: white;
 }
