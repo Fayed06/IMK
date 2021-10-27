@@ -179,5 +179,10 @@ h1 {
 
 #mainImg {
     width: 75%;
+    height: 75%;
     margin-top: 40px;
+}
+
+iframe {
+    margin-top: 10px;
 }
