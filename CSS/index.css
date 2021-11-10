@@ -198,33 +198,6 @@ p {
     margin-bottom: 0;
 }
 
-/*Hover menu */
-
-.sub-menu-1 {
-    display: none;
-}
-
-.menu-bar ul li:hover .sub-menu-1 {
-    display: block;
-    position: absolute;
-    background: #C4C4C4D9 85%;
-    color: black;
-    margin-top: 40px;
-    border-radius: 1px;
-    z-index: 99;
-}
-
-.menu-bar ul li:hover .sub-menu-1 ul {
-    display: block;
-    margin: 10px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-/* Footer */
-
 footer {
     width: 100%;
     background-color: #3F0071;

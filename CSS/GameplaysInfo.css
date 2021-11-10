@@ -86,6 +86,14 @@ body h1 p {
     color: rgb(255, 255, 255);
 }
 
+footer {
+    width: 100%;
+    background-color: #3F0071;
+    color: white;
+    text-align: center;
+    list-style: none;
+}
+
 .column {
     float: left;
     padding: 0 10px;
@@ -177,26 +185,4 @@ h1 {
 
 iframe {
     margin-top: 10px;
-}
-
-footer {
-    width: 100%;
-    height: auto;
-    background-color: #3F0071;
-    color: white;
-    text-align: center;
-    list-style: none;
-}
-
-.text-center-down {
-    width: 20px;
-}
-
-.container-fluid {
-    background-color: #3F0071;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-bottom: 0;
 }

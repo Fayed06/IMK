@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Add a black background color to the top navigation */
 
 
@@ -92,9 +86,12 @@ body h1 p {
     color: rgb(255, 255, 255);
 }
 
-
-p {
-    margin-bottom: 0;
+footer {
+    width: 100%;
+    background-color: #3F0071;
+    color: white;
+    text-align: center;
+    list-style: none;
 }
 
 .column {
@@ -141,7 +138,7 @@ p {
     margin: 20px;
 }
 
-.text-center-up {
+.text-center {
     padding: 5px;
     background-color: #3F0071;
 }
@@ -166,21 +163,4 @@ p {
 a {
     text-decoration: none;
     color: white;
-}
-
-footer {
-    width: 100%;
-    height: auto;
-    background-color: #3F0071;
-    color: white;
-    text-align: center;
-    list-style: none;
-}
-
-.text-center {
-    width: 20px;
-}
-
-.container-fluid {
-    background-color: #3F0071;
 }

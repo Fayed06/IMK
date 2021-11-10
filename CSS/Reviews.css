@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Add a black background color to the top navigation */
 
 .containerHeader {
@@ -89,6 +83,14 @@ body h1 p {
     color: rgb(255, 255, 255);
 }
 
+footer {
+    width: 100%;
+    background-color: #3F0071;
+    color: white;
+    text-align: center;
+    list-style: none;
+}
+
 .column {
     float: left;
     padding: 0 10px;
@@ -163,26 +165,4 @@ h3 {
 .list-group-item-action.d-flex.gap-3.py-3 {
     background-color: #3F0071;
     color: white;
-}
-
-footer {
-    width: 100%;
-    height: auto;
-    background-color: #3F0071;
-    color: white;
-    text-align: center;
-    list-style: none;
-}
-
-.text-center-down {
-    width: 20px;
-}
-
-.container-fluid {
-    background-color: #3F0071;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-bottom: 0;
 }
