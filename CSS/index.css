@@ -1,12 +1,35 @@
-/* Add a black background color to the top navigation */
+/*buat edit drop down*/
+
+.dropdown-menu { background-color: #3F0071; }
+
+.btn-primary {
+    color: #fff;
+    background-color: #3F0071;
+    border-color: #3F0071; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #dddddd;
+    border-color: #dddddd; /*set the color you want here*/
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+
+/* edit drop down end */
 
 .containerHeader {
     background-color: #3F0071;
-    overflow: hidden;
+    overflow: visible;
 }
 
 
 /* Style the links inside the navigation bar */
+
+
 
 .containerHeader a {
     float: left;
@@ -145,13 +168,12 @@ h1 {
     margin-left: 6%;
 }
 
-.carousel-inner {
-    margin-top: 3%;
-    margin-left: 13%;
-}
-
-.carousel-inner:hover {
-    transform: scale(1.05);
+.carousel {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
 }
 
 
@@ -240,3 +262,5 @@ footer {
 .container-fluid {
     background-color: #3F0071;
 }
+
+
