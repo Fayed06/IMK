@@ -194,6 +194,13 @@ p {
     margin-right: auto;
 }
 
+.img-fluid {
+    width: 80%;
+    height: auto;
+    margin-left: 120px;
+    margin-right: auto;
+}
+
 iframe {
     position: relative;
     width: 100%;
