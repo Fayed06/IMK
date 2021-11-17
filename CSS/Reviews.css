@@ -1,3 +1,27 @@
+/*buat edit drop down*/
+
+.dropdown-menu { background-color: #3F0071; }
+
+.btn-primary {
+    color: #fff;
+    background-color: #3F0071;
+    border-color: #3F0071; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #dddddd;
+    border-color: #dddddd; /*set the color you want here*/
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+
+/* edit drop down end */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +32,7 @@
 
 .containerHeader {
     background-color: #3F0071;
-    overflow: hidden;
+    overflow: visible;
 }
 
 
