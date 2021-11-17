@@ -14,17 +14,29 @@
     <title>Hello, world!</title>
 </head>
 
-<div class="containerHeader">
+<div class="containerHeader ">   
     <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none py-2">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
         <span class="fs-4">HOME</span>
     </a>
-    <header class="d-flex justify-content-end py-1">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="Reviews.html" class="nav-link">REVIEWS</a></li>
-            <li class="nav-item"><a href="Gameplays.html" class="nav-link">GAMEPLAYS</a></li>
-            <li class="nav-item"><a href="News.html" class="nav-link">NEWS</a></li>
-            <li class="nav-item"><a href="Abouts.html" class="nav-link">ABOUT</a></li>
+    
+    <header class="d-flex justify-content-end py-1 menu-bar">
+        
+        <ul class="nav nav-pills ">
+            <li class="nav-item"><a href="Reviews.html" class="nav-link text-decoration-none">REVIEWS</a></li>
+            <div class="dropdown">
+                <button type="button" onclick="window.location='Gameplays.html'" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  GAMEPLAY
+                </button>
+                <div class="dropdown-menu ">
+                  <a class="dropdown-item text-decoration-none" href="#">ACTION</a>
+                  <a class="dropdown-item text-decoration-none" href="#">ADVENTURE</a>
+                  <a class="dropdown-item text-decoration-none" href="#">RPG</a>
+                  <a class="dropdown-item text-decoration-none" href="#">FPS</a>
+                </div>
+            </div>
+            <li class="nav-item"><a href="News.html" class="nav-link text-decoration-none">NEWS</a></li>
+            <li class="nav-item"><a href="Abouts.html" class="nav-link text-decoration-none">ABOUT</a></li>
         </ul>
     </header>
 </div>
