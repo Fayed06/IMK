@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* Add a black background color to the top navigation */
 
 .containerHeader {
@@ -185,4 +186,8 @@ footer {
 .footer-bottom {
     text-align: center;
     margin-bottom: 0;
+}
+
+.no-halaman {
+    background-color: #2D044E;
 }
