@@ -212,3 +212,8 @@ footer {
 .no-halaman {
     background-color: #2D044E;
 }
+
+.img-thumbnail {
+    width: 26%;
+    height: auto;
+}
