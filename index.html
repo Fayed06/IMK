@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/index.css">
     <script src="js/index.js"></script>
 
@@ -16,7 +16,7 @@
 
 <div class="containerHeader ">
     <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none py-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
             <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
         </svg>
         <span class="fs-4">HOME</span>
@@ -67,215 +67,473 @@
 
 
 <body>
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="img/carosel 1.png" class="d-block w-100" alt="...">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+           <div class="carousel-item active img-hover-zoom">
+            <a href="pages/GameplaysInfo2.html">
+              <img class="d-block w-100 " src="img/carosel 1.png"  alt="First slide" >
+            </a>
+           </div>
+           <div class="carousel-item img-hover-zoom">
+            <a href="pages/ReviewsInfo.html">
+            <img class="d-block w-100" src="img/dotobig.png"  alt="First slide" >
+          </a>
+           </div>
+           <div class="carousel-item img-hover-zoom">
+            <a href="pages/ReviewsInfo4.html">
+               <img class="d-block w-100" src="img/review6.jpg"  alt="Third slide" >
+             </a>
+           </div>
+           <div class="carousel-item img-hover-zoom">
+            <a href="pages/ReviewsInfo2.html">
+               <img class="d-block w-100" src="img/review2.jpg"  alt="Fourth slide" >
+             </a>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <a href="ReviewsInfo.html">
-                    <img src="img/dotobig.png" class="d-block w-100" alt="...">
+            <div class="carousel-item img-hover-zoom">
+               <a href="pages/ReviewsInfo6.html">
+                  <img class="d-block w-100" src="img/review5.jpg"  alt="Fifth slide" >
                 </a>
             </div>
-            <div class="carousel-item">
-                <img src="img/pubg.png" class="d-block w-100" alt="...">
-            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+     </div>
 
     <br>
-
-    <!-- REVIEWS TAB -->
-    <div class="review" id="myReview">
-        <h1><span>Reviews</span></h1>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="img/dotosmol.png">
-                    <p>Dota 2 is the successor to the original Dota and features polished graphics, smooth gameplay, and an excellent amount of variety
-                        <span id="dots">...</span>
-                    </p>
-
-                    <a href="pages/ReviewsInfo.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/review3.jpg">
-                    <p>2021 marks the 20th anniversary of Grand Theft Auto 3, a landmark video game release that created the blueprint for the countless open
-                        <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-                            
-                        </span>
-                    </p>
-
-                    <a href="pages/ReviewsInfo3.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/review2.jpg">
-                    <p>In many respects, the arrival of Forza Horizon 5 means the king is back. Or at least, that's the expectation going into the latest efforts
-                        <span id="dots">...</span>
-                        <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-                            
-                        </span>
-                    </p>
-
-                    <a href="pages/ReviewsInfo2.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/review6.jpg">
-                    <p>It’s been more than two decades since Age of Empires 2 launched and became an instant RTS classic and Relic is hoping to recapture that magic
-                        <span id="dots">...</span>
-                        <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-                            
-                        </span>
-                    </p>
-
-                    <a href="pages/ReviewsInfo4.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
+     <!-- Review TABS -->
+    <section class="pt-5 pb-5">
+        <div class="container">
+           <div class="row">
+              <div class="col-6">
+                 <h3 class="mb-3">REVIEWS</h3>
+              </div>
+              <div class="col-6 text-right">
+                 <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                 <i class="fa fa-arrow-left"></i>
+                 </a>
+                 <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators1" role="button" data-slide="next">
+                 <i class="fa fa-arrow-right"></i>
+                 </a>
+              </div>
+              <div class="col-12">
+                 <div id="carouselExampleIndicators1" class="carousel slide card-carousel" data-ride="carousel">
+                    <div class="carousel-inner float-right">
+                        <!-- Halaman Pertama -->
+                       <div class="carousel-item active">
+                          <div class="row">
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/doto_thumbnail.png">
+                                   <div class="card-body">
+                                      <p>Dota 2 is the successor to the original Dota and features polished graphics, smooth gameplay, and an excellent amount<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                      <a href="pages/ReviewsInfo.html">
+                                      <button id="myBtn">Read more</button>
+                                    </a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/review3.jpg">
+                                   <div class="card-body">
+                                    <p>2021 marks the 20th anniversary of Grand Theft Auto 3, a landmark video game release that created the blueprint for the countless...
+                                        
+                                    </p>
+                
+                                    <a href="pages/ReviewsInfo3.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>       
+                                </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/review2.jpg">
+                                   <div class="card-body">
+                                    <p>In many respects, the arrival of Forza Horizon 5 means the king is back. Or at least, that's the expectation going into the latest efforts
+                                        <span id="dots">...</span>
+                                        <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                            
+                                        </span>
+                                    </p>
+                
+                                    <a href="pages/ReviewsInfo2.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/review6.jpg">
+                                   <div class="card-body">
+                                    <p>It’s been more than two decades since Age of Empires 2 launched and became an instant RTS classic and Relic is hoping to recapture that magic
+                                        <span id="dots">...</span>
+                                        <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                            
+                                        </span>
+                                    </p>
+                
+                                    <a href="pages/ReviewsInfo4.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <!-- Halaman Kedua -->
+                       <div class="carousel-item">
+                          <div class="row">
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/review4.jpg">
+                                   <div class="card-body">
+                                        <p>Battlefield 2042's release buildup was filled with rumors, leaks, and disappointment, but some players held out and
+                                        <span id="dots">...</span>                                       
+                                        </p>               
+                                        <a href="pages/ReviewsInfo5.html">
+                                        <button id="myBtn">Read more</button>
+                                        </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/review5.jpg">
+                                   <div class="card-body">
+                                        <p>With Resident Evil 7, Capcom took its long-running survival-horror franchise in bold new directions while simultaneously taking it back
+                                        <span id="dots">...</span>                                       
+                                        </p>               
+                                        <a href="pages/ReviewsInfo6.html">
+                                        <button id="myBtn">Read more</button>
+                                        </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                              <div class="card">
+                                 <img class="img-fluid" alt="100%x280" src="img/doto_thumbnail.png">
+                                 <div class="card-body">
+                                    <p>Dota 2 is the successor to the original Dota and features polished graphics, smooth gameplay, and an excellent amount<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/ReviewsInfo.html">
+                                    <button id="myBtn">Read more</button>
+                                  </a>
+                                 </div>
+                              </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/review3.jpg">
+                                   <div class="card-body">
+                                    <p>2021 marks the 20th anniversary of Grand Theft Auto 3, a landmark video game release that created the blueprint for the countless...                            
+                                    </p>               
+                                    <a href="pages/ReviewsInfo3.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>       
+                                </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>  
+                    </div>
+                 </div>
+              </div>
+           </div>
         </div>
-    </div>
+     </section>
 
-    <!-- Gameplay TABS -->
-    <div class="Gameplay" id="myGameplay">
-        <h1><span>Gameplays</span></h1>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="img/news5.jpg">
-                    <p>Announcing the news during The International 2021 with a new character trailer, Valve confirmed that the newest Dota 2 hero to be<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+     <!-- Gameplay TABS -->
 
-                    <a href="pages/GameplaysInfo.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
+     <section class="pt-5 pb-5">
+        <div class="container">
+           <div class="row">
+              <div class="col-6">
+                 <h3 class="mb-3">GAMEPLAY</h3>
+              </div>
+              <div class="col-6 text-right">
+                 <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                 <i class="fa fa-arrow-left"></i>
+                 </a>
+                 <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                 <i class="fa fa-arrow-right"></i>
+                 </a>
+              </div>
+              <div class="col-12">
+                 <div id="carouselExampleIndicators2" class="carousel slide card-carousel" data-ride="carousel">
+                    <div class="carousel-inner float-right">
+                        <!-- Halaman Pertama -->
+                       <div class="carousel-item active">
+                          <div class="row">
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/news5.jpg">
+                                   <div class="card-body">
+                                    <p>Proving that undying loyalty yields unrivaled power, Marci always marches into battle ready to raise fists in defense of<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/GameplaysInfo.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/carosel 1.png">
+                                   <div class="card-body">
+                                    <p>Valorant is a 5v5 tactical hero shooter developed by Riot Games, best known for the Multiplayer Online Battle Arena (MOBA) title League<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/GameplaysInfo2.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/genshin.jpg">
+                                   <div class="card-body">
+                                    <p>Genshin Impact is a free-to-play game from developer MiHoYo, and combines a mix of Zelda: Breath of the Wild-style exploration and design</span>
+                                    </p>
+                
+                                    <a href="pages/GameplaysInfo3.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/4K-pubg-wallpaper.jpg">
+                                   <div class="card-body">
+                                    <p>Over the past few years, the world online has exploded into battle royale madness, with the launch of some really huge games.<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/GameplaysInfo5.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <!-- Halaman Kedua -->
+                       <div class="carousel-item">
+                          <div class="row">
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/dotosmol.png">
+                                   <div class="card-body">
+                                    <p>Dota 2 is an online multiplayer game where you and four teammates choose from a roster of different heroes and, over the</span></p>
+                                    <a href="pages/GameplaysInfo4.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
 
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/carosel 1.png">
-                    <p>Valorant is a 5v5 tactical hero shooter developed by Riot Games, best known for the Multiplayer Online Battle Arena (MOBA) title League<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-                    <a href="pages/GameplaysInfo2.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/genshin.jpg">
-                    <p>Genshin Impact is a free-to-play game from developer MiHoYo, and combines a mix of Zelda: Breath of the Wild-style exploration and design</span>
-                    </p>
-
-                    <a href="pages/GameplaysInfo3.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/4K-pubg-wallpaper.jpg">
-                    <p>Over the past few years, the world online has exploded into battle royale madness, with the launch of some really huge games.<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-                    <a href="pages/GameplaysInfo5.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/destiny2.jpg  ">
+                                   <div class="card-body">
+                                    <p>Those who aren't in the loop about Destiny 2 are probably just wondering what makes this game special or even worth their attention</span></p>
+                                    <a href="pages/GameplaysInfo6.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/carosel 1.png">
+                                   <div class="card-body">
+                                    <p>Valorant is a 5v5 tactical hero shooter developed by Riot Games, best known for the Multiplayer Online Battle Arena (MOBA) title League<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/GameplaysInfo2.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/genshin.jpg">
+                                   <div class="card-body">
+                                    <p>Genshin Impact is a free-to-play game from developer MiHoYo, and combines a mix of Zelda: Breath of the Wild-style exploration and design</span>
+                                    </p>
+                
+                                    <a href="pages/GameplaysInfo3.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>                       
+                    </div>
+                 </div>
+              </div>
+           </div>
         </div>
-    </div>
+     </section>
 
-    <!-- NEWS TABS -->
-    <div class="News" id="myNews">
-        <h1><span>News</span></h1>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="img/deadeye.jpg">
-                    <p>All clues point towards codename Deadeye being VALORANT’s next agent in the next major update of the game<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                    <a href="pages/NewsInfo.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/teamspirit.jpg">
-                    <p>Eastern European Team Spirit pulled an immense upset to win TI10 (The International 10), the biggest Dota 2 <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-                    <a href="pages/NewsInfo2.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/newstate.jpg">
-                    <p>PUBG: New State, the upcoming free-to-play mobile game, will release on iOS and Android on November 11th, its <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-                    <a href="pages/NewsInfo3.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="img/news4.jpg">
-                    <p>After defeating EVOS Legends in the lower bracket final, ONIC directly met RRQ Hoshi in the <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-                    <a href="pages/NewsInfo4.html">
-                        <button id="myBtn">Read more</button>
-                    </a>
-
-                </div>
-            </div>
+     <!-- NEWS TABS -->
+     <section class="pt-5 pb-5">
+        <div class="container">
+           <div class="row">
+              <div class="col-6">
+                 <h3 class="mb-3">NEWS</h3>
+              </div>
+              <div class="col-6 text-right">
+                 <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                 <i class="fa fa-arrow-left"></i>
+                 </a>
+                 <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators3" role="button" data-slide="next">
+                 <i class="fa fa-arrow-right"></i>
+                 </a>
+              </div>
+              <div class="col-12">
+                 <div id="carouselExampleIndicators3" class="carousel slide card-carousel" data-ride="carousel">
+                    <div class="carousel-inner float-right">
+                       <div class="carousel-item active">
+                           <!-- Halaman Pertama -->
+                          <div class="row">
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/deadeye.jpg">
+                                   <div class="card-body">
+                                    <p>All clues point towards codename Deadeye being VALORANT’s next agent in the next major update of the game<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/teamspirit.jpg">
+                                   <div class="card-body">
+                                    <p>Eastern European Team Spirit pulled an immense upset to win TI10 (The International 10), the biggest Dota 2 <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo2.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/newstate.jpg">
+                                   <div class="card-body">
+                                    <p>PUBG: New State, the upcoming free-to-play mobile game, will release on iOS and Android on November 11th, its <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo3.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/news4.jpg">
+                                   <div class="card-body">
+                                    <p>After defeating EVOS Legends in the lower bracket final, ONIC directly met RRQ <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo4.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <!-- Halaman Kedua -->
+                       <div class="carousel-item">
+                          <div class="row">
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/news5.jpg">
+                                   <div class="card-body">
+                                    <p>Announcing the news during The International 2021 with a new character trailer, Valve confirmed that<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo5.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/news6.jpg">
+                                   <div class="card-body">
+                                    <p>It’s not always easy to predict which shows will instantly become appointment television. A dark fantasy series<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo6.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/news7.png">
+                                   <div class="card-body">
+                                    <p>The 3.10 update for Valorant is rolling out today, introducing the game's millions of players to the<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo7.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/news8.jfif">
+                                   <div class="card-body">
+                                    <p>After years of attempts, s1mple has finally won his first CSGO major. Natus Vincere solidly defeated G2 Esports<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo8.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <!-- Halaman Ketiga -->
+                       <div class="carousel-item">
+                          <div class="row">
+                             <div class="col-md-3 mb-3">
+                                <div class="card">
+                                   <img class="img-fluid" alt="100%x280" src="img/news9.jpg">
+                                   <div class="card-body">
+                                    <p>It finally happened: we now have an Elden Ring release date. Previously announced at the Microsoft E3<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                    <a href="pages/NewsInfo8.html">
+                                        <button id="myBtn">Read more</button>
+                                    </a>
+                                    </div>
+                                </div>
+                             </div>
+                             
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
         </div>
-    </div>
-    <!-- BOOTSTRAP JAVASCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     </section>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->   
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>     
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 <br>
+<!-- FOOTER --> 
 <div class="container-fluid">
     <footer>
         <div class="sosmed">
-            <img src="img/fb.png" class="text-center" alt="...">
-            <img src="img/ig.png" class="text-center" alt="...">
-            <img src="img/twitter.png" class="text-center" alt="...">
+            <a href="https://www.facebook.com/ivanm633/" ><img src="img/fb.png" class="text-center" alt="..."></a>
+            <a href="https://www.instagram.com/fayed.exe/" ><img src="img/ig.png" class="text-center" alt="..."></a>
+            <a href="https://twitter.com/Xfayz06" ><img src="img/twitter.png" class="text-center" alt="..."></a>
         </div>
         <p>created by Kelompok 5 IMK D</p>
     </footer>
 </div>
-
-
-
 </html>

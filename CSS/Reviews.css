@@ -168,8 +168,12 @@ body h1 p {
 }
 
 .text-center {
-    padding: 45px;
+
     background-color: #3F0071;
+}
+
+.text-center2 {
+    width: 20px;
 }
 
 .content {
@@ -228,3 +232,5 @@ footer {
     width: 26%;
     height: auto;
 }
+
+
